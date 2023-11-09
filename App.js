@@ -115,22 +115,22 @@ export default function BillSplitter() {
             <Text  style={styles.tipText}>15%</Text> 
           </TouchableOpacity> 
           <TouchableOpacity 
+            style={[styles.tip, tipPercentage === 18 ? styles.selected : null]} 
+            onPress={() => handleTipButtonClick(18)} 
+          > 
+            <Text  style={styles.tipText}>18%</Text> 
+          </TouchableOpacity> 
+          <TouchableOpacity 
+            style={[styles.tip, tipPercentage === 20 ? styles.selected : null]} 
+            onPress={() => handleTipButtonClick(20)} 
+          > 
+            <Text  style={styles.tipText}>20%</Text> 
+          </TouchableOpacity> 
+          <TouchableOpacity 
             style={[styles.tip, tipPercentage === 25 ? styles.selected : null]} 
             onPress={() => handleTipButtonClick(25)} 
           > 
             <Text  style={styles.tipText}>25%</Text> 
-          </TouchableOpacity> 
-          <TouchableOpacity 
-            style={[styles.tip, tipPercentage === 50 ? styles.selected : null]} 
-            onPress={() => handleTipButtonClick(50)} 
-          > 
-            <Text  style={styles.tipText}>50%</Text> 
-          </TouchableOpacity> 
-          <TouchableOpacity 
-            style={[styles.tip, tipPercentage === 75 ? styles.selected : null]} 
-            onPress={() => handleTipButtonClick(75)} 
-          > 
-            <Text  style={styles.tipText}>75%</Text> 
           </TouchableOpacity> 
         </View> 
         <TextInput 
