@@ -81,7 +81,8 @@ export default function BillSplitter() {
   };
   
   return ( 
-    <ScrollView contentContainerStyle={styles.container}> 
+    <ScrollView contentContainerStyle={styles.container}>
+      <Text style={styles.title}>Tip Calculator</Text>  
       <View style={styles.billInput}> 
         <Text style={styles.text} >Bill</Text> 
         <View style={styles.inputContainer}> 

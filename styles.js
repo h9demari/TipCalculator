@@ -7,6 +7,13 @@ const styles = StyleSheet.create({
         padding: 20,
         backgroundColor: '#fff',
     },
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 15,
+        textAlign: 'center',
+        color: '#2395e2',
+    },
     billInput: {
         marginBottom: 20,
     },
@@ -63,12 +70,12 @@ const styles = StyleSheet.create({
     },
     generateBillBtn: {
         width: '100%',
-        height: 40,
+        height: 45,
         backgroundColor: 'blue',
         borderRadius: 7,
         alignItems: 'center',
         justifyContent: 'center',
-        marginVertical: 16,
+        marginTop: 5
     },
     generateBillBtnText: {
         color: 'white',
@@ -76,8 +83,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     billOutput: {
-        marginVertical: 15,
-        padding: 20,
+        padding: 15,
         backgroundColor: '#2395e2',
         borderRadius: 8,
         color: 'white',
