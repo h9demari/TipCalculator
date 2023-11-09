@@ -87,7 +87,8 @@ export default function BillSplitter() {
         <View style={styles.inputContainer}> 
           <Text >$</Text> 
           <TextInput 
-            style={styles.input} 
+            style={styles.input}
+            placeholder="Bill Amount" 
             keyboardType="numeric"
             value={billAmount} 
             onChangeText={handleBillAmountChange} 

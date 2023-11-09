@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     generateBillBtn: {
         width: '100%',
         height: 40,
-        backgroundColor: '#2395e2',
+        backgroundColor: 'blue',
         borderRadius: 7,
         alignItems: 'center',
         justifyContent: 'center',
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
     value: {
-        color: "white",
+        color: "lightgreen",
         fontWeight: "bold",
         paddingLeft: 10,
         fontSize: 19,
