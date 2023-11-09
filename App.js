@@ -163,13 +163,12 @@ export default function BillSplitter() {
           Total <Text style={styles.value}>{totalBill}</Text> 
         </Text> 
         <Text style={styles.eachPersonBill}> 
-          Each Person Bill <Text style={styles.value}>{eachPersonBill}</Text> 
+          Split Check (Per Person) <Text style={styles.value}>{eachPersonBill}</Text> 
         </Text> 
         <TouchableOpacity 
           style={styles.resetBtn} 
           onPress={handleReset}
           disabled={!billAmount} 
-
         > 
           <Text style={styles.resetBtnText}>Reset</Text> 
         </TouchableOpacity> 
