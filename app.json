@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "TipCalculator",
+    "slug": "TipCalculator",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "TipCalculator"
+}
