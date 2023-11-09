@@ -16,12 +16,6 @@ export default function BillSplitter() {
   
     if (!isNaN(amount) && amount >= 0) { 
       setBillAmount(value); 
-      setCustomTip(''); 
-      setTipPercentage(0); 
-      setTipAmount(''); 
-      setTotalBill(''); 
-      setEachPersonBill('');
-      setNumberOfPeople(''); 
     } else { 
       // Handle negative or invalid input 
       setBillAmount(''); 
@@ -60,6 +54,11 @@ export default function BillSplitter() {
   }; 
   
   const calculateBill = () => { 
+    if (!billAmount || !numberOfPeople || !tipPercentage) {
+      alert('Please fill out all required fields');
+      return;
+    }
+
     const bill = parseFloat(billAmount); 
     const tip = (bill * tipPercentage) / 100; 
     const total = bill + tip; 
@@ -152,7 +151,6 @@ export default function BillSplitter() {
         <TouchableOpacity 
           style={styles.generateBillBtn} 
           onPress={calculateBill} 
-          disabled={!billAmount || !numberOfPeople || !tipPercentage} 
         > 
           <Text style={styles.generateBillBtnText}>Generate Bill</Text> 
         </TouchableOpacity> 
